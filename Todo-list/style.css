@@ -4,9 +4,6 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-html {
-  font-size: 62.5%;
-}
 body {
   background: #352f5b;
   color: #ffff;
@@ -52,5 +49,23 @@ input[type="text"]:focus {
     display: grid;
     grid-template-columns: 18rem 13rem 6rem;
     grid-column-gap: .8rem;
-    grid-row-gap: 1rem;
+    grid-row-gap: 2.4rem;
+}
+.js-div {
+  display: contents;
+}
+.aling{
+  display: flex;
+  align-items: center;
+}
+.delete-btn {
+  background-color: #c0392b;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  border-radius: .7rem;
+}
+.delete-btn:hover {
+  background-color: #ff6b5c;
 }

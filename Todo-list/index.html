@@ -22,11 +22,16 @@
    <div class="container">
      <p class="title">Todo List</p>
      <div class="grid">
-      <input type="text" placeholder="Add Todo" class="input-area">
+      <input type="text" placeholder="Add Todo" class="input-area input-js" onkeydown="keyDwon(event)">
 
-       <input type="date" class="input-area">
-       <button class="btn-area">Add</button>
+       <input type="date" class="input-area dueDate">
+       <button class="btn-area" onclick="
+         addTodo()
+       ">Add</button>
+     <div class="js-div"></div>
      </div>
+     
+    
    </div>
   </body>
   <script src="scirpt.js"></script>
