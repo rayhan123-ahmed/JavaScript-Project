@@ -69,3 +69,33 @@ input[type="text"]:focus {
 .delete-btn:hover {
   background-color: #ff6b5c;
 }
+.clear{
+  text-align: center;
+  margin-top: 1.8rem;
+}
+.clear-btn{
+  background:  #5A567A;  
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: .7rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.clear-btn:hover{
+  background: #6B678F
+}
+.clear-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.error{
+  text-align: center;
+}
+.error-msg{
+  color: #ff6b5c;
+  font-size: 1.2rem;
+  margin-top: 0.6rem;
+  min-height: 1rem;
+}
