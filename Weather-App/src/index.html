@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <title>Weather App</title>
+    <style>
+      body {
+        background-image: url(../src/IMG_8732\ \(1\).PNG);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
   </head>
   <body
-    class="bg-gradient-to-b  from-sky-400 to-blue-600 text-[#fffef6] font-[Poppins]"
+    class="bg-gradient-to-b from-sky-400 to-blue-600 text-[#fffef6] font-[Poppins]"
   >
     <div
       class="max-w-[1240px] h-[100vh] mx-auto flex flex-col justify-center items-center"
     >
-      <div class="bg-white/20 backdrop-blur-md p-8 rounded-xl shadow-lg min-h-[160px]:">
+      <div
+        class="bg-white/20 backdrop-blur-md p-8 rounded-xl shadow-lg min-h-[160px]:"
+      >
         <h1 class="text-center text-[18px] font-bold">Weather app</h1>
         <div id="search">
           <input
-          id="input-area"
+            id="input-area"
             type="text"
             class="focus:outline focus:ring-2 focus:ring-sky-700 mr-2 p-2 rounded text-white"
             placeholder="Enter City Name..."
@@ -36,7 +46,6 @@
         </div>
 
         <p id="error-massage" class="hidden text-red-800"></p>
-
       </div>
     </div>
 
