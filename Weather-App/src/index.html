@@ -1,14 +1,45 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-  <title>Weather App</title>
-</head>
-<body>
- 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Weather App</title>
+  </head>
+  <body
+    class="bg-gradient-to-b from-sky-400 to-blue-600 text-[#fffef6] font-[Poppins]"
+  >
+    <div
+      class="max-w-[1240px] h-[100vh] mx-auto flex flex-col justify-center items-center"
+    >
+      <div class="bg-white/20 backdrop-blur-md p-8 rounded-xl shadow-lg h-40">
+        <h1 class="text-center text-[18px] font-bold">Weather app</h1>
+        <div id="search">
+          <input
+          id="input-area"
+            type="text"
+            class="focus:outline focus:ring-2 focus:ring-sky-700 mr-2 p-2 rounded text-white"
+            placeholder="Enter City Name..."
+          />
+          <button
+            id="search-btn"
+            class="bg-white text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-300 font-semibold p-2 rounded"
+          >
+            Search
+          </button>
+        </div>
 
-  <script src="script.js"></script>
-</body>
+        <div id="weather-info" class="hidden">
+          <h2 id="city-name"></h2>
+          <h3 id="temperature"></h3>
+          <p id="description"></p>
+        </div>
+
+        <p id="error-massage" class="hidden"></p>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
