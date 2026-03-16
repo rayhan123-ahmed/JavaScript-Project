@@ -9,45 +9,32 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart"
     />
     <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
     <title>Cart section</title>
-    <style>
-      body {
-        background-image: url(../src/images/cart-bg.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-      .material-symbols-outlined {
-        font-size: 34px;
-      }
-    </style>
   </head>
-  <body>
-    <section
-      class="relative w-full h-screen bg-cover bg-center flex items-center"
-    >
-      <div class="absolute inset-0 bg-black/30"></div>
-
-      <div
-        class="max-w-[600px] bg-white/20 backdrop-blur-md border border-white/30   shadow-lg ml-10"
-      >
-        <div class="main ">
-          <div class="heading flex items-center gap-1.5 p-3">
-            <span class="material-symbols-outlined text-[#2a3f75]">
-              shopping_cart
-            </span>
-            <h2 class="text-[20px] font-medium">Your Cart</h2>
-          </div>
-
-          <div
-            id="main"
-            class="bg-white/30 backdrop-blur-lg border border-white/40 "
+  <body class="h-[100vh] relative">
+    <div class="absolute inset-0 bg-black/30"></div>
+    <section>
+      <div class="container backdrop-blur-md border border-white/30">
+        <h1 class="text-2xl">Product</h1>
+        <div id="product-list" class="mb-5">
+          <!-- Products will dynamically add by javaScript -->
+        </div>
+        <h2 class="shp-cart mb-[15px] text-[25px]">Shopping Cart</h2>
+        <div id="cart-items">
+          <p id="empty-card">Your Card is empty</p>
+        </div>
+        <div id="cart-total" class="hidden text-right">
+          <p>Total: <span id="total-price">$0.00</span></p>
+          <button
+            id="cheackout-btn"
+            class="border-none p-5 text-white rounded-[5px] cursor-pointer transition-colors duration-300 bg-blue-500 hover:bg-blue-700"
           >
-     
-    
-    </div>
+            Cheackout
+          </button>
         </div>
       </div>
     </section>
+    <script src="scirpt.js"></script>
   </body>
 </html>
